@@ -265,24 +265,28 @@ textarea {
 
 .navbar-brand img {
   max-width: 100%;
-  max-height: 50px;
+  max-height: 90px;
   position: relative;
 }
 
 .navbar-height {
-  height: 80px;
+  height: 130px;
   background-color: #2e3946 !important;
 }
 
-.bft-btn:hover {
+.bft-btn {
   background-color: #79c459 !important;
   color: #ffffff !important;
   border-color: #79c459 !important;
 }
 
+.bft-btn:hover {
+  transition: 300ms;
+  transform: perspective(100px) translateZ(10px);
+}
+
 footer {
-  background-color: #2e3946;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 footer ul.social-icons {
@@ -303,14 +307,17 @@ footer ul.social-icons li a {
     display: inline-block;
     line-height: 34px;
     text-align: center;
-    background-color: #fff;
-    color: #2d3235;
+    background-color: #2e3946;
+    color: #ffffff;
     border-radius: 50%;
     transition: all 0.3s;
 }
 
 footer ul.social-icons li a:hover {
-    background-color: #79c459;
+    background-color: #2e3946;
+  color: #79c459;
+  transition: 300ms;
+  transform: perspective(100px) translateZ(10px);
 }
 
 
