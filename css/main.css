@@ -17,6 +17,7 @@ html, body {
   line-height: 1.4;
   height: 100%;
   font-family: 'Manrope' !important;
+  background: #2e3946 !important;
 }
 
 /*
@@ -266,18 +267,167 @@ textarea {
 .navbar-brand img {
   max-width: 100%;
   max-height: 90px;
+  width: 100%;
+  margin: auto;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 90px;
   position: relative;
 }
 
 .navbar-height {
   height: 130px;
-  background-color: #2e3946 !important;
+  background-color: transparent !important;
+  position: absolute !important;
 }
+
+.hero {
+  height: 90vh;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0,145,236,0.4)), url("https://res.cloudinary.com/aime/image/upload/v1651678720/SERVICE_SUPPORT_-_04_mai_2022_-_16_osulkg.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.section-header {
+    margin: 45px 0;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    font-weight: 800 !important;
+}
+
+.section-header span {
+    font-style: normal;
+    color: #79c459;
+}
+
+
+.callback-services {
+    border-top: 1px solid #eee;
+    padding-top: 140px;
+}
+
+.contact-us {
+    padding: 60px 0px;
+}
+
+.contact-us .contact-form {
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+
+.callback-form {
+    /*background-color: #4d5864;*/
+}
+
+.callback-form .contact-form {
+    /*background-color: #2d3235;*/
+    padding: 60px;
+    border-radius: 5px;
+}
+
+.callback-form .contact-form input {
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    padding: 0px 15px;
+    color: #2e2e2e;
+    font-size: 13px;
+    text-transform: none;
+    box-shadow: none;
+    margin-bottom: 35px;
+}
+
+.callback-form .contact-form input:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.callback-form .contact-form textarea {
+    border-radius: 5px;
+    height: 120px;
+    max-height: 200px;
+    min-height: 120px;
+    display: inline-block;
+    padding: 15px;
+    color: #313131;
+    font-size: 13px;
+    text-transform: none;
+    box-shadow: none;
+    margin-bottom: 35px;
+}
+
+.callback-form .contact-form textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.callback-form .contact-form ::-webkit-input-placeholder { /* Edge */
+    color: #aaa;
+}
+
+.callback-form .contact-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #aaa;
+}
+
+.callback-form .contact-form ::placeholder {
+    color: #aaa;
+}
+
+.callback-form .contact-form button.border-button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 28px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.callback-form .contact-form button.border-button:hover {
+    background-color: #fff;
+    color: #79c459;
+}
+
+.contact-us .contact-form button.filled-button {
+    background-color: #79c459;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 12px 30px;
+    display: inline-block;
+    transition: all 0.3s;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.contact-us .contact-form button.filled-button:hover {
+    background-color: #fff;
+    color: #79c459;
+}
+
 
 .bft-btn {
   background-color: #79c459 !important;
-  color: #ffffff !important;
+  color: #2e3946 !important;
   border-color: #79c459 !important;
+  font-weight: bold !important;
 }
 
 .bft-btn:hover {
@@ -290,6 +440,7 @@ footer {
 }
 
 footer ul.social-icons {
+  padding-left: 0 !important;
 }
 
 footer ul.social-icons li {
@@ -307,14 +458,14 @@ footer ul.social-icons li a {
     display: inline-block;
     line-height: 34px;
     text-align: center;
-    background-color: #2e3946;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #2e3946;
     border-radius: 50%;
     transition: all 0.3s;
 }
 
 footer ul.social-icons li a:hover {
-    background-color: #2e3946;
+    background-color: #ffffff;
   color: #79c459;
   transition: 300ms;
   transform: perspective(100px) translateZ(10px);
