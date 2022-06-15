@@ -371,7 +371,7 @@ textarea {
     color: #aaa;
 }
 
-.callback-form .contact-form button.border-button {
+.callback-form .contact-form .border-button {
     background-color: transparent;
     color: #fff;
     border: 2px solid #fff;
@@ -388,19 +388,19 @@ textarea {
     cursor: pointer;
 }
 
-.callback-form .contact-form button.border-button:hover {
+.callback-form .contact-form .border-button:hover {
     background-color: #fff;
     color: #79c459;
 }
 
-.contact-us .contact-form button.filled-button {
+.contact-us .contact-form .filled-button {
     background-color: #79c459;
     color: #fff;
     border: none;
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 400;
-    padding: 12px 30px;
+    /*padding: 12px 30px;*/
     display: inline-block;
     transition: all 0.3s;
     outline: none;
@@ -409,7 +409,7 @@ textarea {
     cursor: pointer;
 }
 
-.contact-us .contact-form button.filled-button:hover {
+.contact-us .contact-form .filled-button:hover {
     background-color: #fff;
     color: #79c459;
 }

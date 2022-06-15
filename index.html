@@ -212,30 +212,28 @@
                   </div>
                   <div class="col-lg-12">
 
+                    <input type="submit" class="filled-button" value="Envoyer">
                     <img src="img/loading.gif" class="htmx-indicator" width="48" alt="">
-                    <fieldset>
-                      <button type="submit" class="filled-button">Envoyer</button>
-                    </fieldset>
 
                     <script src=
                               "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
                     </script>
 
                     <script>
-                      $("#submit-button").on('touchstart click', function(event) {
+                      $("#submit-button").on('touchstart click', function (event) {
                         disable_button()
                       });
                     </script>
                     <script>
 
-                      function enable_button(){
+                      function enable_button() {
                         document.querySelector('#submit-button').disabled = false;
                       }
 
 
-                      function disable_button(){
+                      function disable_button() {
                         document.querySelector('#submit-button').disabled = true;
-                        setTimeout(()=>{
+                        setTimeout(() => {
                           enable_button();
                         }, 15000)
                       }
@@ -249,8 +247,8 @@
           <div class="col-md-5" data-aos="fade-up-left">
             <!--            <img src="img/white_under_construction.svg" class="img-fluid" alt="">-->
             <svg class="animated" id="freepik_stories-email-capture" xmlns="http://www.w3.org/2000/svg"
-                 viewBox="0 0 500 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
-                 xmlns:svgjs="http://svgjs.com/svgjs">
+                 viewBox="0 0 500 500" version="1.1"
+            >
               <style>svg#freepik_stories-email-capture:not(.animated) .animable {
                 opacity: 0;
               }
@@ -788,7 +786,9 @@
 
 </script>
 
-<script src="https://unpkg.com/htmx.org@1.7.0" integrity="sha384-EzBXYPt0/T6gxNp0nuPtLkmRpmDBbjg6WmCUZRLXBBwYYmwAUxzlSGej0ARHX0Bo" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/htmx.org@1.7.0"
+        integrity="sha384-EzBXYPt0/T6gxNp0nuPtLkmRpmDBbjg6WmCUZRLXBBwYYmwAUxzlSGej0ARHX0Bo"
+        crossorigin="anonymous"></script>
 
 
 <script src="https://smtpjs.com/v3/smtp.js">
