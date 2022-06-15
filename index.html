@@ -214,8 +214,18 @@
 
                     <img src="img/loading.gif" class="htmx-indicator" width="48" alt="">
                     <fieldset>
-                      <button id="submit-button" type="submit" onclick="disable_button()" class="filled-button">Envoyer</button>
+                      <button id="submit-button" type="submit" class="filled-button">Envoyer</button>
                     </fieldset>
+
+                    <script src=
+                              "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+                    </script>
+
+                    <script>
+                      $("#submit-button").on('touchstart click', function(event) {
+                        disable_button()
+                      });
+                    </script>
                     <script>
 
                       function enable_button(){
