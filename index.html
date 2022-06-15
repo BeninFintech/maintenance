@@ -178,7 +178,7 @@
           </div>
           <div class="col-md-7" data-aos="zoom-in">
             <div class="contact-form">
-              <form id="contact" action="mailer.php" method="post">
+              <form id="contact" action="mailer.php" hx-post="/mailer.php" method="post">
                 <div class="row">
                   <div class="col-lg-6 col-md-12 col-sm-12">
                     <fieldset>
@@ -214,12 +214,22 @@
 
                     <img src="img/loading.gif" class="htmx-indicator" width="48" alt="">
                     <fieldset>
-                      <button id="submit-button" hx-post="/mailer.php" type="submit" onclick="disable_button()" id="form-submit" class="filled-button">Envoyer</button>
+                      <button id="submit-button" type="submit" onclick="disable_button()" id="form-submit" class="filled-button">Envoyer</button>
                     </fieldset>
                     <script>
+
+                      function enable_button(){
+                        document.querySelector('#submit-button').disabled = false;
+                      }
+
+
                       function disable_button(){
                         document.querySelector('#submit-button').disabled = true;
+                        setTimeout(()=>{
+                          enable_button();
+                        }, 15000)
                       }
+
                     </script>
                   </div>
                 </div>
